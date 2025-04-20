@@ -22,7 +22,7 @@ This project models a basic college system where:
 - `Profesor` *(extends Person)*: Represents a professor managing courses and grades.
 - `Materie`: Represents a subject/course.
 - `Departament`: Represents a university department.
-- `Department` *(Enum)*: Enumerates department types (e.g., CS, Math, Physics).
+- `Department` *(Enum)*: Enumerates department types (e.g. ASC, PAOJ, etc.).
 - `An`: Represents the study year.
 - `Grupa`: Represents a group within a study year.
 - `Serie`: Represents a series of groups.
