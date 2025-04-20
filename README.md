@@ -17,7 +17,7 @@ This project models a basic college system where:
 
 ## 🧩 Main Classes & Structure
 
-- `Person` *(Abstract Class)*: Base class for all people in the system.
+- `Person` *(Abstract Class)*: Base class for all people.
 - `Student` *(extends Person)*: Represents a student enrolled in courses.
 - `Profesor` *(extends Person)*: Represents a professor managing courses and grades.
 - `Materie`: Represents a subject/course.
@@ -28,9 +28,7 @@ This project models a basic college system where:
 - `Serie`: Represents a series of groups.
 - `Meniu` *(Singleton)*: The main menu and control panel for user interaction.
 
-### 🧩 Interface
 
-- `Contactable`: Common interface implemented by `Person` to provide contact info functionality.
 
 ## 🛠️ Features
 
@@ -41,23 +39,18 @@ This project models a basic college system where:
 - CLI-based interaction for viewing and managing grades.
 
 ## 🏗️ Example Structure
-
 ```text
 src/
-├── main/
-│   ├── java/
-│   │   ├── model/
-│   │   │   ├── Person.java
-│   │   │   ├── Student.java
-│   │   │   ├── Profesor.java
-│   │   │   ├── Materie.java
-│   │   │   ├── Departament.java
-│   │   │   ├── enums/
-│   │   │   │   └── Department.java
-│   │   │   ├── structure/
-│   │   │   │   ├── An.java
-│   │   │   │   ├── Grupa.java
-│   │   │   │   └── Serie.java
-│   │   │   └── Meniu.java
-│   │   └── interfaces/
-│   │       └── Contactable.java
+├── Catalog/
+│   ├── An.java
+│   ├── Grupa.java
+│   ├── Serie.java
+│   ├── Materie.java
+│   ├── Departament.java
+│   └── TipOra.java      # Enum
+├── Persoane/
+│   ├── Persoana.java
+│   ├── Profesor.java
+│   ├── Student.java
+│   └── Contact.java         # Interface for contact info
+├── Meniu.java               # Singleton menu class (outside the packages)
